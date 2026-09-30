@@ -1,6 +1,6 @@
-package com.miniid.identity.user.repository;
+package com.miniid.identity.core.user.repository;
 
-import com.miniid.identity.user.entity.User;
+import com.miniid.identity.core.user.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
