@@ -54,7 +54,6 @@ public class User {
     @PrePersist
     protected void onCreate() {
         Instant now = Instant.now();
-
         createdAt = now;
         updatedAt = now;
     }
@@ -90,5 +89,21 @@ public class User {
 
     public Instant getUpdatedAt() {
         return updatedAt;
+    }
+
+    public void enable() {
+        this.enabled = true;
+    }
+
+    public void disable() {
+        this.enabled = false;
+    }
+
+    public void lock() {
+        this.accountLocked = true;
+    }
+
+    public void unlock() {
+        this.accountLocked = false;
     }
 }
